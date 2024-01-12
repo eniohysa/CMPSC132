@@ -6,7 +6,7 @@ class Payroll:
         self.sales_amt = sales_amt
         self.advanced_pay = advanced_pay
 
-    def calc_pay(self, sales_amt, advanced_pay):
+    def calc_pay(self):
         if self.sales_amt >= 22000:
             commission = 0.18
         elif self.sales_amt >= 18000:
@@ -26,4 +26,4 @@ class Payroll:
         print(f'ID: {self.employee_id}')
         print(f'Sales Amount: {self.sales_amt}')
         print(f'Advanced Pay: {self.advanced_pay}')
-        print(f'Total Pay: {self.calc_pay(self.sales_amt, self.advanced_pay)}')
+        print(f'Total Pay: {self.calc_pay()}')
