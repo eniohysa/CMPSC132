@@ -10,7 +10,9 @@ import Grade
 def main():
     scores = []
     for i in range(5):
-        score = input(f'Enter grade #{i + 1}: ')
+        score = int(input(f'Enter grade #{i + 1}: '))
+        while score > 100 or score < 0:
+            score = int(input(f'Must be between 0-100. Enter grade {i + 1}: '))
         scores.append(score)
 
     average = Grade.calc_average(scores)
