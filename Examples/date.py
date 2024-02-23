@@ -5,4 +5,4 @@ class Date:
         self.__year = yyyy
 
     def __str__(self):
-        return f''
+        return f'{self.__month}/{self.__date}/{self.__year}'

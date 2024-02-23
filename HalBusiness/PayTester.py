@@ -4,11 +4,11 @@
 # Date: 1/11/24
 #
 # Short Description: Calculate payroll of Hal's Employees
-import Payroll
+from Payroll import Payroll
 
 
 def main():
-    employee1 = Payroll.Payroll(1234, "Enio", "Hysa", 25000, 0)
+    employee1 = Payroll(1234, "Enio", "Hysa", 25000, 0)
     employee1.display()
     employee1.set_sales_amt(10000)
     employee1.set_advanced_pay(1000)
@@ -16,7 +16,7 @@ def main():
           f"Updated advanced pay: ${employee1.get_advanced_pay()}\n"
           f"Updated pay: ${employee1.calc_pay()}\n")
 
-    employee2 = Payroll.Payroll(1101, "John", "Doe", 14500, 200)
+    employee2 = Payroll(1101, "John", "Doe", 14500, 200)
     employee2.display()
     employee2.set_employee_id(3690)
     employee2.set_employee_first_name("Jane")
